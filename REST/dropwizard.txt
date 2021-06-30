@@ -1,0 +1,27 @@
+
+
+	1. Dropwizard is a jersey (jax-rs) rest development framework which 
+is using to develop the rest based web services.
+	2. We will create the maven/gradle projects and put the dropwizard dependency
+in pom.xml (This is project of the model xml file.)
+	3.Dropwizard have 3 important components :
+	(a) JETTY ( HTTP Server )
+	(b) JERSEY for Rest(Jersey container works under the hood of dropwizard framework.
+	(c) JACKSON for JSON.(Rest web services transformation in JSON format.)
+
+	Note : For creating the dropwizard project we use dropwizard artifacts
+	id and instruct it to maven to create the dropwizard specific project.
+	Command:
+	-> mvn archetype:generate -DgroupId=com.dropwizard -DartifactId=DemoJavaProject2 -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+	Commands : -> mvn clean ( It cleans the project)
+		 -> mvn package  (It will create the bundle)
+		-> mvn clean package (It will clean the dropwizard project and package it.) 
+		-> mvn build (It will create the bundle of project in the form jar/war.  
+	
+
+	<dependency>
+    	<groupId>mysql</groupId>
+    	<artifactId>mysql-connector-java</artifactId>
+    	<version>5.1.8</version>
+	</dependency>
